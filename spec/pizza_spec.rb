@@ -27,7 +27,7 @@ describe Pizza::Pie do
 		it 'returns true if all toppings are vegetarian' do
 			pizza = Pizza::Pie.new
 
-			expect(pizza.toppings.vegetarian?).to eql true
+			expect(pizza.toppings.any?).to eql true
 		end
 	end
 end 

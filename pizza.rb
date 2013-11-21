@@ -6,6 +6,10 @@ module Pizza
   		@toppings = toppings 
   	end
 
+    def vegetarian?(toppings)
+      return true unless toppings.any? { |topping| topping }
+    end
+
   end
 
   class Topping
